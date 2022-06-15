@@ -29,7 +29,7 @@ Link to [design B](https://drive.google.com/file/d/1agB-HQY_mq-P9KgCJQxqjXAcCqwb
 
 >## Solution
 
-Link to the completed task: 
+The link to the completed task can be found [here](https://pauline-banye.github.io/flex-grid/).
 
 
 #
