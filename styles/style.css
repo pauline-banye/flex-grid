@@ -1,0 +1,188 @@
+/* variables for the document */
+:root {
+    --ff-secondary: "Lexend Deca", sans-serif;
+    --ff-primary: "Big Shoulders Display", cursive;
+
+    --fw-reg: 400;
+    --fw-bold: 700;
+
+    --clr-background: hsl(0, 0%, 95%);
+    --clr-orange: hsl(31, 77%, 52%);
+    --clr-cyan: hsl(184, 100%, 22%);
+    --clr-dark-cyan: hsl(179, 100%, 13%);
+    --clr-paragraph: hsla(0, 0%, 100%, 0.75);
+
+    --fs-h1: 48px;
+    --fs-body: 15px;
+}
+
+@media (max-width: 375px) {
+    :root {
+        --fs-h1: 72px;
+        --fs-body: 18px;
+    }
+}
+
+
+/* general styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: var(--clr-background);
+    display: flex;
+    /* flex-direction: row; */
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-bold);
+    color: var(--clr-background);
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+p {
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-reg);
+    color: var(--clr-paragraph);
+    font-size: var(--fs-body);
+    padding-bottom: 100px;
+    margin-right: 20px;
+    line-height: 1.5rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    margin-top: 0;
+    font-weight: var(--fw-bold);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: var(--fw-reg);
+    font-size: var(--fs-body);
+    padding: 10px 30px;
+    font-family: var(--ff-secondary);   
+}
+
+@media (max-width: 375px) {
+    button {
+        font-size: 12px;
+    }
+}
+
+img {
+    width: 50px;
+}
+
+
+/* custom styling */
+
+/* styling for the main container */
+.container {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    border: 1px solid var(--clr-background);
+    border-radius: 50px;
+}
+
+/* adjustment for smaqller screens */
+@media (max-width: 375px) {
+    .container {
+        flex-direction: column;
+        
+    }
+}
+
+/* styling for all div buttons within the container */
+.container div button {
+    background-color: var(--clr-background);
+    border: 3px solid var(--clr-background);
+    font-weight: var(--fw-bold);
+}
+
+.container div button:hover {
+    border: 3px solid var(--clr-background);
+    color: var(--clr-background);
+}
+
+
+/* styling for the cards */
+.luxury,
+.suv,
+.sedans {
+    padding: 40px;
+}
+
+/* styling for the sedan card */
+.sedans {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.sedans button {
+    color: var(--clr-orange);
+}
+
+.sedans button:hover,
+.sedans {
+    background-color: var(--clr-orange);
+}
+
+/* adjustments for sedan card on smaller screens */
+@media (max-width: 375px) {
+    .sedans {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;        
+    }
+}
+
+/* styling for the suv card */
+.suv button:hover,
+.suv {
+    background-color: var(--clr-cyan);
+}
+
+.suv button {
+    color: var(--clr-cyan);
+}
+
+/* styling for the luxuer card */
+.luxury button:hover,
+.luxury {
+    background-color: var(--clr-dark-cyan);
+}
+
+.luxury button {
+    color: var(--clr-dark-cyan);
+}
+
+.luxury {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* adjustments for luxury card on smaller screens */
+@media (max-width: 375px) {
+    .luxury {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 0px;        
+    }
+}

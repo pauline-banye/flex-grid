@@ -1,0 +1,82 @@
+/* variables for the document */
+:root {
+
+    --clr-background: #1b1c29;
+    --clr-yellow: #fea501;
+    --clr-blue: #01aefd;
+    --clr-red: #ea5120;
+    --clr-green: #05aa42;
+}
+
+
+/* general styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    place-items: center;
+    height: 100vh;
+    display: grid;
+    background-color: var(--clr-background);
+}
+main {
+    display: grid;
+    grid-template-areas: 
+    "a a a a b"
+    "c c d d d"
+    "c c e e e";
+    gap: 10px;
+    width: 35%;
+    margin: auto;
+}
+
+main div {
+    padding: 40px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* custom styling */
+.box-a {
+    background-color: var(--clr-red);
+    grid-area: a;
+}
+
+.box-b {
+    background-color: var(--clr-yellow);
+    grid-area: b;
+}
+
+.box-c {
+    background-color: var(--clr-green);
+    grid-area: c;
+}
+
+.box-d {
+    background-color: var(--clr-blue);
+    grid-area: d;
+}
+
+.box-e {
+    background-color: var(--clr-blue);
+    grid-area: e;
+}
+
+.box-a,
+.box-b {
+    padding: 75px;
+}
+
+.box-d {
+    padding-top: 25px;
+}
