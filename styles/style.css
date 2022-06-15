@@ -34,7 +34,7 @@
 main {
     background-color: var(--clr-background);
     display: flex;
-    /* flex-direction: row; */
+    position: relative;
     height: 100vh;
     justify-content: center;
     align-items: center;
@@ -59,10 +59,16 @@ p {
 }
 
 a {
-    color: black;
+    color: var(--clr-dark-cyan);
+    font-family: var(--ff-primary);
     text-decoration: none;
     margin-top: 0;
     font-weight: var(--fw-bold);
+    position: absolute;
+    top: 15%;
+    left: 19.5em;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 a:hover {

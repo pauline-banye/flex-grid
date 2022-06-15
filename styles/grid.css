@@ -28,13 +28,13 @@ main {
     "a a a a b"
     "c c d d d"
     "c c e e e";
-    gap: 10px;
-    width: 35%;
+    gap: 15px;
+    width: 40%;
     margin: auto;
 }
 
 main div {
-    padding: 40px;
+    padding: 60px;
 }
 
 a {
@@ -72,11 +72,15 @@ a:hover {
     grid-area: e;
 }
 
-.box-a,
-.box-b {
-    padding: 75px;
+.box-a{
+    padding-right: -30px;
+    padding-top: 150px;
 }
 
 .box-d {
     padding-top: 25px;
 }
+
+/* .box-b{
+    padding-right: 20px;
+} */
